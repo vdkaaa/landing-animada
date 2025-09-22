@@ -1,0 +1,129 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* scroll suave para los anchors */
+html { scroll-behavior: smooth; }
+
+/* utilidades del layout */
+.container { max-width: 64rem; } /* ~1024px */
+.section { max-width: 56rem; margin: 0 auto; padding: 4rem 1.5rem; }
+.section-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; }
+.section-body { font-size: .95rem; color: rgb(203 213 225); }
+
+/* enlaces y botones coherentes */
+.link { color: rgb(190 220 255); opacity: .9; transition: opacity .2s ease; }
+.link:hover { opacity: 1; }
+
+.btn-primary {
+  background: white; color: black; padding: .5rem 1rem; border-radius: .5rem;
+  font-weight: 600; transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(255,255,255,.12); }
+
+.btn-ghost {
+  border: 1px solid rgba(255,255,255,.3); padding: .5rem 1rem; border-radius: .5rem;
+  transition: background-color .15s ease, transform .15s ease;
+}
+.btn-ghost:hover { background: rgba(255,255,255,.06); transform: translateY(-1px); }
+
+/* hero: gradiente animado en el texto */
+.gradient-text {
+  background-image: linear-gradient(90deg, #22d3ee, #a78bfa, #22d3ee);
+  background-size: 200% 200%;
+}
+@keyframes gradient-x { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+.animate-gradient { animation: gradient-x 6s ease-in-out infinite; }
+
+/* fade-in suave para secciones */
+.fade-in { animation: fade .6s ease both; }
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* skills como "cards" y sin bullets fantasma */
+.skills-grid {
+  list-style: none; padding-left: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: .75rem;
+}
+@media (min-width: 768px) { .skills-grid { grid-template-columns: repeat(4, minmax(0,1fr)); } }
+
+.skill-item {
+  text-align: center; padding: .5rem .75rem; border-radius: .5rem;
+  border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.02);
+  transition: background-color .15s ease, transform .15s ease;
+}
+.skill-item:hover { background: rgba(255,255,255,.06); transform: translateY(-1px); }
+
+
+/* --- Cards de proyectos --- */
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .cards { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+.card {
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.02);
+  border-radius: .75rem;
+  padding: 1rem;
+  display: flex; flex-direction: column; gap: .75rem;
+  transition: transform .15s ease, background-color .15s ease, border-color .15s ease;
+}
+.card:hover { transform: translateY(-2px); background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.2); }
+.card-h { display: flex; align-items: flex-start; justify-content: space-between; gap: .5rem; }
+.card-title { font-weight: 700; font-size: 1rem; }
+.card-desc { color: rgb(203 213 225); font-size: .9rem; line-height: 1.4; }
+.card-actions { display: flex; gap: .5rem; margin-top: auto; }
+
+/* etiquetas/chips */
+.tagrow { display: flex; gap: .4rem; flex-wrap: wrap; }
+.tag {
+  font-size: .7rem; padding: .1rem .4rem; border-radius: .4rem;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+}
+
+/* CTA doble (CV/Portafolio) */
+.cta-dual { display: flex; gap: .6rem; justify-content: center; margin-top: 1.25rem; }
