@@ -32,24 +32,24 @@ export default function App() {
   {
     title: "Landing animada",
     desc: "Hero con micro-interacciones y secciones.",
-    demo: "https://tu-landing.vercel.app",
+    demo: "https://landing-animada.vercel.app/",
     repo: "https://github.com/vdkaaa/landing-animada",
     tags: ["React", "TS", "Tailwind"]
   },
   {
     title: "Gallery + Lightbox",
     desc: "Grid de imágenes, modal accesible y navegación con teclado.",
-    demo: "https://tu-gallery.vercel.app",
-    repo: "https://github.com/vdkaaa/gallery-lightbox",
-    tags: ["React", "A11y"]
+    demo: "https://gallery-lightbox-accesible.vercel.app/",
+    repo: "https://github.com/vdkaaa/Gallery-Lightbox-accesible",
+    tags: ["React", "Tailwind"]
   },
-  {
+  /*{
     title: "Buscador con debounce",
     desc: "Filtro con debounce, lista grande y estados vacíos.",
     demo: "https://tu-buscador.vercel.app",
     repo: "https://github.com/vdkaaa/buscador-debounce",
     tags: ["React", "UX"]
-  },
+  },*/
 ];
   return (
     <div className="min-h-screen text-white bg-gradient-to-b from-slate-950 to-slate-900">
@@ -147,10 +147,10 @@ export default function App() {
 
         {/* CTA doble: CV + Portafolio PDF */}
         <div className="cta-dual">
-          <a className="btn-ghost" href="https://drive.google.com/tu-cv.pdf" target="_blank" rel="noreferrer">
+          <a className="btn-ghost" href="https://drive.google.com/file/d/1qRDJrfGZuzl0_KhUwF4ZY_eUH8c38rwi/view?usp=sharing" target="_blank" rel="noreferrer">
             Ver CV
           </a>
-          <a className="btn-ghost" href="https://drive.google.com/tu-portafolio.pdf" target="_blank" rel="noreferrer">
+          <a className="btn-ghost" href="https://drive.google.com/file/d/1_Er_4zAoFlv1ZE3Ivhnc643qifDopkkv/view?usp=sharing" target="_blank" rel="noreferrer">
             Ver Portafolio
           </a>
         </div>
