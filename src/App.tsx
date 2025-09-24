@@ -147,7 +147,7 @@ export default function App() {
 
         {/* CTA doble: CV + Portafolio PDF */}
         <div className="cta-dual">
-          <a className="btn-ghost" href="https://drive.google.com/file/d/1qRDJrfGZuzl0_KhUwF4ZY_eUH8c38rwi/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a className="btn-ghost" href="https://drive.google.com/file/d/1DyE3Cm9q25iMB7wpLyg7jjgZDW45sOQF/view?usp=sharing" target="_blank" rel="noreferrer">
             Ver CV
           </a>
           <a className="btn-ghost" href="https://drive.google.com/file/d/1_Er_4zAoFlv1ZE3Ivhnc643qifDopkkv/view?usp=sharing" target="_blank" rel="noreferrer">
